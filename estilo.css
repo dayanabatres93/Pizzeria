@@ -68,13 +68,13 @@ nav a:hover {
     text-shadow: 0 0 8px #ff5252; /* Efecto bombilla encendida */
 }
 
-/* --- Sección Hero (Imagen principal ficticia) --- */
+
 .contenido {
-    background-image: url('Pizza.jpg'); 
+    background-image: url('img/Pizza.jpg'); 
     background-size: cover; 
     background-position: center; 
     background-color: #222; 
-    padding: 100px 50px;
+    padding: 100px 50px; 
     text-align: center;
     color: #fff;
     min-height: 80vh;
