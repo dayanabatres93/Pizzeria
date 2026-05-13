@@ -3,13 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Fuente más gruesa y retro, estilo póster de los 80s */
     font-family: 'Impact', 'Arial Black', 'Segoe UI', sans-serif;
     letter-spacing: 1px;
 }
 
 body {
-    /* Patrón de tablero de ajedrez oscuro clásico de pizzería arcade */
     background-color: #111; 
     background-image: 
       linear-gradient(45deg, #1a1a1a 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a),
@@ -19,34 +17,29 @@ body {
     color: #eee;
 }
 
-/* Encabezado y Navegación*/
 header {
-    background-color: #311b92; /* Morado oscuro estilo arcade */
-    color: #fbc02d; /* Amarillo dorado */
+    background-color: #311b92; 
+    color: #fbc02d; 
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky; /* Fija el encabezado en la parte superior */
+    position: sticky; 
     top: 0;    
     z-index: 1000;
-    border-bottom: 5px solid #fbc02d; /* Borde grueso amarillo */
+    border-bottom: 5px solid #fbc02d; 
     box-shadow: 0px 4px 15px rgba(0,0,0,0.8);
 }
 
 header .logo img {
   display: flex;
-  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  justify-content: flex-start; 
   padding: 10px 20px;
    width: 180px; 
   height: auto; 
   display: block;
   max-width: 100%; 
   transition: width 0.3s ease;
-}
-
-.header-activo .logo img {
-  width: 80px;
 }
 
 nav ul {
@@ -64,8 +57,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff5252; /* Rojo brillante al pasar el mouse */
-    text-shadow: 0 0 8px #ff5252; /* Efecto bombilla encendida */
+    color: #ff5252; 
+    text-shadow: 0 0 8px #ff5252; 
 }
 
 
@@ -78,8 +71,7 @@ nav a:hover {
     text-align: center;
     color: #fff;
     min-height: 80vh;
-    border-bottom: 5px dashed #fbc02d; /* Borde estilo ticket de arcade */
-    /* Un overlay oscuro para que el texto resalte sobre la imagen */
+    border-bottom: 5px dashed #fbc02d; 
     box-shadow: inset 0 0 100px rgba(0,0,0,0.9);
 }
 
@@ -87,87 +79,85 @@ nav a:hover {
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fbc02d;
-    /* Sombra de bloque 3D retro */
     text-shadow: 4px 4px 0px #311b92, -2px -2px 0px #000;
 }
 
 .contenido p {
-    font-size: 1.2em; /*descripcion del hero */
+    font-size: 1.2em; 
     margin-bottom: 30px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para leer mejor */
+    background-color: rgba(0, 0, 0, 0.6);
     display: inline-block;
     padding: 10px;
     border: 2px solid #311b92;
 }
 
 .btn {
-    background-color: #d32f2f; /* Rojo clásico */
+    background-color: #d32f2f; 
     color: white;
     padding: 12px 25px;
     text-decoration: none;
-    border-radius: 0px; /* Bordes cuadrados, más 80s */
+    border-radius: 0px; 
     font-weight: normal;
     border: 3px solid #fff;
-    box-shadow: 4px 4px 0px #000; /* Sombra sólida estilo 8-bits */
+    box-shadow: 4px 4px 0px #000; 
     text-transform: uppercase;
     transition: all 0.2s;
 }
 
 .btn:hover {
     background-color: #b71c1c;
-    box-shadow: 2px 2px 0px #000; /* Efecto de presionar botón arcade */
+    box-shadow: 2px 2px 0px #000; 
     transform: translate(2px, 2px);
 }
 
-/* Sección del Menú */
 .menu-seccion {
     padding: 100px 50px;
     text-align: center;
 }
 
 .menu-seccion h2 { 
-    margin-bottom: 40px; /*titulo del menu */
+    margin-bottom: 40px; 
     color: #fbc02d;
     font-size: 3em;
-    text-shadow: 3px 3px 0px #311b92, 0 0 15px rgba(251, 192, 45, 0.5); /* Brillo estilo letrero */
+    text-shadow: 3px 3px 0px #311b92, 0 0 15px rgba(251, 192, 45, 0.5); 
 }
 
 .contenedor-pizzas {
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; /* Permite que bajen de línea si la pantalla es pequeña */
+    flex-wrap: wrap; 
 }
 
 .tarjeta-pizza {
-    background-color: #222; /* Fondo oscuro para la tarjeta */
+    background-color: #222; 
     background-size: cover;
-    border: 4px solid #311b92; /* Borde morado grueso */
-    border-radius: 10px; /* Cuadrado estilo retro */
+    border: 4px solid #311b92; 
+    border-radius: 10px; 
     padding: 25px;
     width: 260px;
-    box-shadow: 10px 6px 0px #000; /* Sombra dura de bloque */
+    box-shadow: 10px 6px 0px #000; 
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .tarjeta-pizza img {
     width: 100%;          
     height: 180px;        
-    object-fit: cover;    /* Evita que la foto se deforme o estire */
-    border-radius: 0; /* Bordes cuadrados */
-    margin-bottom: 15px;  /* espacio entre la foto y el texto */
-    display: block;       /* Elimina pequeños espacios extra debajo de la imagen */
+    object-fit: cover;
+    border-radius: 0;
+    margin-bottom: 15px;
+    display: block;
     border: 2px solid #000;
 }
 
-/*Botón de WhatsApp*/
+
 .btn-whatsapp {
     display: inline-block; 
     margin-top: 15px;
     padding: 10px 15px;
     background-color: #25d366; 
-    color: #000; /* Texto negro para contraste retro */
+    color: #000; 
     text-decoration: none;
     border-radius: 0px;
     font-weight: normal;
@@ -178,29 +168,29 @@ nav a:hover {
 }
 
 .btn-whatsapp:hover {
-    background-color: #128c7e; /* Animacion del WhatsApp */
+    background-color: #128c7e;
     box-shadow: 1px 1px 0px #000;
     transform: translate(2px, 2px);
 }
 
 .tarjeta-pizza:hover {
-    transform: translateY(-5px); /* La animacion del mouse */
-    box-shadow: 10px 10px 0px #fbc02d; /* La sombra cambia a amarillo al hacer hover */
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 0px #fbc02d; 
     border-color: #fbc02d;
 }
 
 .tarjeta-pizza h3 {
-    margin-bottom: 10px; /*titulo de la pizza */
+    margin-bottom: 10px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .tarjeta-pizza p {
-    font-size: 0.9em; /*descripcion de la pizza */
+    font-size: 0.9em;
     color: #ccc;
     margin-bottom: 15px;
-    font-family: 'Courier New', Courier, monospace; /* Fuente estilo computadora vieja para descripciones */
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
 }
 
@@ -212,32 +202,31 @@ nav a:hover {
     text-shadow: 2px 2px 0px #000;
 }
 
-/* --- Pie de Página --- */
 footer {
-    background-color: #000; /* Fondo totalmente negro */
+    background-color: #000; 
     color: white;
     text-align: center;
     padding: 40px 20px;
     margin-top: 40px;
-    border-top: 5px solid #d32f2f; /* Línea roja superior */
+    border-top: 5px solid #d32f2f; 
     background-image: repeating-linear-gradient(
       45deg,
       #000,
       #000 10px,
       #111 10px,
       #111 20px
-    ); /* Textura sutil de rayas de advertencia */
+    ); 
 }
 
 footer h3 {
-    margin-bottom: 15px; /*titulo del pie de pagina */
+    margin-bottom: 15px; 
     color: #fbc02d;
     text-shadow: 2px 2px 0px #311b92;
 }
 
 footer p {
-    margin-bottom: 5px; /*informacion de contacto */
+    margin-bottom: 5px; 
     font-size: 1em;
     color: #aaa;
-    font-family: 'Courier New', Courier, monospace; /* Letra de monitor CRT antiguo */
+    font-family: 'Courier New', Courier, monospace; .
 }
